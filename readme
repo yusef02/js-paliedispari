@@ -1,0 +1,81 @@
+# js-paliedispari
+
+## tracia
+
+@qui
+
+Ciao ragazzi,
+
+Esercizio di oggi: Paliedispari
+
+nome repo: `js-paliedispari`
+
+### Palidroma
+
+Chiedere all'utente di inserire una parola
+
+Creare una funzione per capire se la parola inserita è palindroma
+
+### Pari e Dispari
+
+L'utente sceglie pari o dispari e inserisce un numero da 1 a 5.
+
+Generiamo un numero random (sempre da 1 a 5) per il computer (usando una funzione).
+
+Sommiamo i due numeri
+
+Stabiliamo se la somma dei due numeri è pari o dispari (usando una funzione)
+
+Dichiariamo chi ha vinto.
+
+Consigli del giorno
+
+1. Scriviamo sempre in italiano i passaggi che vogliamo fare
+2. Scriviamo sempre solo un pezzetto di codice alla volta, se funziona allora andiamo avanti.
+
+Buon lavoro e buon divertimento!
+
+## svolgimento
+
+### palindroma
+
+- chiedere il testo al user con promt e assegno ad una variabile testo
+- **invoco la funzione isPalindrom**(testo) e assegno il valore ad una variabile palindrom
+- _if_ se varibile palindrom è true
+  - console il tuo testo è palindromo
+- _else_
+  - console il tuo testo non è palindromo
+
+#### isPalindrom(messaggio)
+
+- ribalto la variabile messaggio e la assegno ad una variabile
+<!-- - confronto i caratteri delle due parole -->
+- inizializo una variabile contatore index con il valore della lunghezza della parola
+- _for_ index minore della lunghezza della parola
+  <!-- adesso scorro le due parole una con l'index del for che incremnta e l'altro con l'index dichiarato precedentemente che decrementa -->
+  - _if_ le due lettere sono uguali
+    - continua
+  - _else_
+    -return false
+    return true
+
+### pari e dispari
+
+- chiedo al'utente di scegliere un numero tra 1 e 5 FINCHE non lo inserirà coretto
+- chiedo all'utente di scegliere pari o dispari con promt finche non inserirà corettamente
+- **genera numero randomico** per il numero del cpu
+- faccio la somma dei due numeri
+- controllo la somma se **pari dispari**
+- comunico chi ha vinto tra i due
+
+#### genera numero randomico
+
+- genero un numero con la libreria math tra due limiti minimo e massimo
+- ritorno il numero generato
+
+#### pari dispari
+
+- prendo come parametro un numero
+- SE nuemro pari
+  - ritorno true
+- ALTRIMENTI ritorno falso
